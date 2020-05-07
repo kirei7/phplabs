@@ -1,0 +1,26 @@
+.menu {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin: 10px 20px;
+}
+.menu > a {
+	padding: 0 10px;
+}
+.form-group {
+	display: block;
+	max-width: 800px;
+	margin: 0 auto;
+}
+body, p {
+	color: #f4f4f4;
+}
+.form-horizontal {
+border-radius: 24px;
+background: linear-gradient(225deg, #141414, #181818);
+box-shadow:  -6px 6px 12px #0f0f0f, 
+             6px -6px 12px #1d1d1d;
+}
+body {
+	background-color: #161616;
+}

@@ -1,0 +1,32 @@
+.main-wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 20px;
+}
+.element {
+	 width: 600px;
+	 display: flex;
+	 justify-content: space-between;
+	 flex-direction: row;
+	 margin-bottom: 20px;
+	 
+}
+.element > button {
+	margin-right: 20px;
+}
+.product {
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-self: center;
+}
+input {
+	display: none;
+}
+.product-is-set {
+	display: none;
+	align-self: center;
+}
