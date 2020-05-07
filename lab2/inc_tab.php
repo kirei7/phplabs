@@ -1,4 +1,0 @@
-<?php
-$users='vadim';
-
-?>

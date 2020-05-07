@@ -5,10 +5,10 @@ include("inc_tab.php");
 
 $db = mysqli_connect($server, $user, $pwd, $dbase);
 
-echo "<h4>Створюємо таблицю \"$users\" ...</h4>";
+echo "<h4>Створюємо таблицю \"Users\" ...</h4>";
 
-mysqli_query($db,"DROP TABLE $users");
-if(!mysqli_query($db,"CREATE TABLE $users (
+mysqli_query($db,"DROP TABLE Users");
+if(!mysqli_query($db,"CREATE TABLE Users (
 id INT NOT NULL auto_increment,
 name CHAR(50),
 email VARCHAR(255),

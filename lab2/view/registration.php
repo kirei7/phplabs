@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,7 +13,6 @@
 <body>
 	<div class="menu">
 		<?php
-			session_start();
 			echo '<a href="index.php">Головна</a>';
 			if(isset($_SESSION['success'])){
     			echo '<a href="users.php">Користувачі</a>';

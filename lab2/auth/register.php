@@ -1,7 +1,5 @@
 <?php
-
-	include('../../../inc.php');
-	include('../inc_tab.php');
+	include('../../dbConnection.php');
 		
 	$db = mysqli_connect($server, $user, $pwd, $dbase);
 	session_start();
@@ -58,8 +56,7 @@
 			exit;
 			}
 			
-			if ( mysqli_query($db,"INSERT INTO $users VALUES (
-				 NULL,
+			if ( mysqli_query($db,"INSERT INTO Users (name, email, password) VALUES (
 				 '$name',
 				 '$email',
 				 '$password'

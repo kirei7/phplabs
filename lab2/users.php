@@ -1,9 +1,6 @@
 <?php
- include('../../inc.php');
- include('inc_tab.php');
- 	
-
 	session_start();
+ 	include('../dbConnection.php');
 	
 	if(!isset($_SESSION['success'])){
     	die(header("location: 404.php"));
@@ -11,7 +8,7 @@
 
 	$db = mysqli_connect($server, $user, $pwd, $dbase);
 	  
-	$res=mysqli_query($db,"SELECT * from $users");
+	$res=mysqli_query($db,"SELECT * from Users");
 	
 ?>
 <!doctype html>

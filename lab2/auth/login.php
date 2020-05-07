@@ -1,9 +1,8 @@
 <?php
-include('../../../inc.php');
-include('../inc_tab.php');
-		
-	$db = mysqli_connect($server, $user, $pwd, $dbase);
 	session_start();
+	include('../../dbConnection.php');
+
+	$db = mysqli_connect($server, $user, $pwd, $dbase);
 
 	function check_email ($email){
 	  if(!preg_match('|^[-0-9A-Za-z_\.]+@[-0-9A-Za-z^\.]+\.[a-z]{2,6}$|i',$email)){
@@ -38,7 +37,7 @@ include('../inc_tab.php');
 			exit;
 		  }
 
-		  $res = mysqli_query($db, "SELECT * FROM $users WHERE email='$email'");
+		  $res = mysqli_query($db, "SELECT * FROM Users WHERE email='$email'");
 
 
 			if ($res !== null){ 
